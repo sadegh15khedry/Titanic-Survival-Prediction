@@ -28,3 +28,9 @@ def save_model(model, path):
 def load_model(path):
     loaded_model = joblib.load(path)
     return loaded_model
+
+
+def set_pandas_display_options():
+    pd.set_option('display.max_columns', 20)
+    # Increase the maximum width of the display
+    pd.set_option('display.width', 1000)
