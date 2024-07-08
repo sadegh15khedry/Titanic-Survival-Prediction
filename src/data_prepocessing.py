@@ -1,8 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-def load_data(file_name):
-    return pd.read_csv('../datasets/'+file_name)
+
 
 def split_data(df, feature_column, label_column, test_size=0.15,  val_size=0.15, random_state=50):
     # Split the data into train+val and test
