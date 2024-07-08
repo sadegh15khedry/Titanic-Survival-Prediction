@@ -1,0 +1,19 @@
+passenger_id,survived,p_class,name,sex,age,sib_sp,parch,ticket,fare,cabin,embarked
+1107,0,1,"Head, Mr. Christopher",male,42.0,0,0,113038,42.5,B11,S
+1009,1,3,"Sandstrom, Miss. Beatrice Irene",female,1.0,1,1,PP 9549,16.7,G6,S
+1270,0,1,"Hipkins, Mr. William Edward",male,55.0,0,0,680,50.0,C39,S
+1242,1,1,"Greenfield, Mrs. Leo David (Blanche Strouse)",female,45.0,0,1,PC 17759,63.3583,D10 D12,C
+1283,1,1,"Lines, Mrs. Ernest H (Elizabeth Lindsey James)",female,51.0,0,1,PC 17592,39.4,D28,S
+1069,0,1,"Stengel, Mr. Charles Emil Henry",male,54.0,1,0,11778,55.4417,C116,C
+1263,1,1,"Wilson, Miss. Helen Alice",female,31.0,0,0,16966,134.5,E39 E41,C
+984,1,1,"Davidson, Mrs. Thornton (Orian Hays)",female,27.0,1,2,F.C. 12750,52.0,B71,S
+916,1,1,"Ryerson, Mrs. Arthur Larned (Emily Maria Borie)",female,48.0,1,3,PC 17608,262.375,B57 B59 B63 B66,C
+936,1,1,"Kimball, Mrs. Edwin Nelson Jr (Gertrude Parsons)",female,45.0,1,0,11753,52.5542,D19,S
+973,0,1,"Straus, Mr. Isidor",male,67.0,1,0,PC 17483,221.7792,C55 C57,S
+1114,1,2,"Cook, Mrs. (Selena Rogers)",female,22.0,0,0,W./C. 14266,10.5,F33,S
+1292,1,1,"Bonnell, Miss. Caroline",female,30.0,0,0,36928,164.8667,C7,S
+918,1,1,"Ostby, Miss. Helene Ragnhild",female,22.0,0,1,113509,61.9792,B36,C
+940,1,1,"Bucknell, Mrs. William Robert (Emma Eliza Ward)",female,60.0,0,0,11813,76.2917,D15,C
+1179,0,1,"Snyder, Mr. John Pillsbury",male,24.0,1,0,21228,82.2667,B45,S
+1282,0,1,"Payne, Mr. Vivian Ponsonby",male,23.0,0,0,12749,93.5,B24,S
+1256,1,1,"Harder, Mrs. George Achilles (Dorothy Annan)",female,25.0,1,0,11765,55.4417,E50,C

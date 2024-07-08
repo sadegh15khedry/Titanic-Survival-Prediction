@@ -4,10 +4,18 @@ from sklearn.model_selection import train_test_split
 def load_data(file_name):
     return pd.read_csv('../datasets/'+file_name)
 
-def split_data(df, feature_column, label_column, test_size=.2, random_state=50):
-    # x = df.drop(columns= [feature_column])
-    # y = df.drop(columns= [label_column])
-    return train_test_split(df[feature_column], df[label_column], test_size=test_size, random_state=random_state)
+def split_data(df, feature_column, label_column, test_size=0.15,  val_size=0.15, random_state=50):
+    # Split the data into train+val and test
+    x_train_val, x_test, y_train_val, y_test = train_test_split(df[feature_column], df[label_column], 
+                                                                test_size=test_size, random_state=random_state)
+    # Calculate the relative validation size with respect to the train+val set
+    val_size_relative = val_size / (1 - test_size)
+    
+    # Split the train+val set into train and validation sets
+    x_train, x_val, y_train, y_val = train_test_split(x_train_val, y_train_val, 
+                                                      test_size=val_size_relative, random_state=random_state)
+    
+    return x_train, x_test, x_val, y_train, y_val, y_test
 
 def preprocess_data(df):
     df = df.dropna()
