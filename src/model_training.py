@@ -7,19 +7,29 @@ def get_untrained_custom_model(optimizer='adam', loss='categorical_crossentropy'
     model = Sequential()
     # Dense layers
     model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=32, activation='relu'))
-    model.add(Dense(units=16, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    model.add(Dense(units=64, activation='relu'))
+    
     # model.add(Dropout(rate=0.5))
     # Output layer
-    model.add(Dense(units=2, activation='softmax'))
+    model.add(Dense(units=1, activation='sigmoid'))
     
     model.compile(optimizer=optimizer, loss=loss , metrics=metrics)
     return model
 
 
 
-def train_model(model, x_train, y_train, epochs, x_val, y_val):
-    history = model.fit(x_train, y_train, epochs=epochs, batch_size=32, validation_data=(x_val, y_val))
+def train_model(model, x_train, y_train, epochs, x_val, y_val, batch_size):
+    history = model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(x_val, y_val))
     return history
 
 
