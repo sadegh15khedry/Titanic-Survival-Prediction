@@ -7,9 +7,18 @@ import tensorflow as tf
 def get_untrained_custom_model(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'],x_train=0):
     model = Sequential([
     Dense(128, activation='relu', input_shape=(x_train.shape[1],)),
-    Dropout(0.5),
-    Dense(64, activation='relu'),
-    Dropout(0.5),
+    # Dropout(0.5),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    # Dropout(0.5),
     Dense(1, activation='sigmoid')
 ])
     model.compile(optimizer=optimizer, loss=loss , metrics=metrics)
