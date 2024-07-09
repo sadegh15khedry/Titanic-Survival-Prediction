@@ -6,22 +6,11 @@ import matplotlib.pyplot as plt
 def get_untrained_custom_model(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']):
     model = Sequential()
     # Dense layers
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    model.add(Dense(units=64, activation='relu'))
-    
-    # model.add(Dropout(rate=0.5))
-    # Output layer
-    model.add(Dense(units=1, activation='sigmoid'))
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(128, activation='relu'),
+    Dense(1, activation='sigmoid')  # Binary classification output
     
     model.compile(optimizer=optimizer, loss=loss , metrics=metrics)
     return model

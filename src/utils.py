@@ -48,7 +48,7 @@ def get_error(y_train, y_pred_train):
     
     
 def load_data(file_name):
-    return pd.read_csv('../datasets/'+file_name)
+    return pd.read_csv(file_name)
 
 def test_gpu():
     print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
