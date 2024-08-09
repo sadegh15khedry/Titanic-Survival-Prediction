@@ -27,7 +27,7 @@ The dataset used in this project is the Titanic dataset available from [Kaggle](
 ## Project Structure
 
 The project has the following structure:
-
+```
 titanic-survival-prediction/
 │
 ├── datasets/
@@ -62,7 +62,7 @@ titanic-survival-prediction/
 │
 ├── README.md
 └── environment.yml
-
+```
 
 ## Setup Instructions
 
