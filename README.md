@@ -107,7 +107,7 @@ The model's performance is evaluated on the validation set. Metrics such as accu
 - Val Accuracy: 0.8146
   
 ![training_validation_loss_and_accuracy](https://github.com/user-attachments/assets/4d3f5751-f80a-4f06-874e-1636334e9d5f)
-** Train and validation loss and accuracy **
+*Train and validation loss and accuracy*
 
 ### Testing
 
@@ -129,7 +129,7 @@ weighted avg       0.75      0.75      0.75       179
 ```
 
 ![cnfusion_matrix](https://github.com/user-attachments/assets/ce784542-431f-455d-bdaa-b3d529c31a8c)
-** Confusion Matrix **
+*Confusion Matrix*
 
 ## Future Work
 
