@@ -1,4 +1,4 @@
-# Titanic Survival Prediction
+![cnfusion_matrix](https://github.com/user-attachments/assets/29bc64c3-4934-4e08-8c65-6d699f2dfdb0)# Titanic Survival Prediction
 
 This repository contains a machine learning project for predicting survival on the Titanic using a neural network.
 
@@ -98,12 +98,43 @@ The model's performance is evaluated on the validation set. Metrics such as accu
 
 ## Results
 
-The model achieved an accuracy of 75% on the training set and 72% on the validation set. Further improvements and experimentation are needed to enhance the performance.
+### Training
+
+- Train Loss: 0.3781 
+- Train Accuracy: 0.8296 
+
+### Validation
+- Val Loss: 0.5708 
+- Val Accuracy: 0.8146
+  
+![training_validation_loss_and_accuracy](https://github.com/user-attachments/assets/4d3f5751-f80a-4f06-874e-1636334e9d5f)
+** Train and validation loss and accuracy **
+
+### Testing
+
+- Test accuracy: 0.754
+- Test Loss: 0.669
+- Precision: 0.753
+- recall: 0.754
+- F1: 0.749
+
+```
+              precision    recall  f1-score   support
+
+           0       0.76      0.86      0.80       105
+           1       0.75      0.61      0.67        74
+
+    accuracy                           0.75       179
+   macro avg       0.75      0.73      0.74       179
+weighted avg       0.75      0.75      0.75       179
+```
+
+![cnfusion_matrix](https://github.com/user-attachments/assets/ce784542-431f-455d-bdaa-b3d529c31a8c)
+** Confusion Matrix **
 
 ## Future Work
 
 - **Hyperparameter Tuning:** Experiment with different architectures, learning rates, and other hyperparameters.
-- **Feature Engineering:** Create new features based on domain knowledge.
 - **Ensemble Methods:** Combine predictions from multiple models to improve accuracy.
 
 ## Contributing
