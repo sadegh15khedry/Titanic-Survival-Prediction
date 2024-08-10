@@ -12,12 +12,10 @@ def get_untrained_custom_model(optimizer='adam', loss='categorical_crossentropy'
     Dense(128, activation='relu'),
     Dense(128, activation='relu'),
     Dense(128, activation='relu'),
-    Dense(128, activation='relu'),
-    Dense(128, activation='relu'),
-    Dense(128, activation='relu'),
-    Dense(128, activation='relu'),
-    Dense(128, activation='relu'),
-    Dense(128, activation='relu'),
+    Dense(64, activation='relu'),
+    # Dense(64, activation='relu'),
+
+
     # Dropout(0.5),
     Dense(1, activation='sigmoid')
 ])
