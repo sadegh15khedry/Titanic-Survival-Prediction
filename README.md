@@ -1,4 +1,3 @@
-![cnfusion_matrix](https://github.com/user-attachments/assets/29bc64c3-4934-4e08-8c65-6d699f2dfdb0)# Titanic Survival Prediction
 
 This repository contains a machine learning project for predicting survival on the Titanic using a neural network.
 
